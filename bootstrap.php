@@ -17,8 +17,11 @@ $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src/entit
 
 // database configuration parameters
 $conn = array(
-    'driver' => 'pdo_sqlite',
-    'path' => __DIR__ . '/db.sqlite',
+    'dbname'  => 'architecture_mvc_doctrine',
+    'user'    => 'root',
+    'password'=>  '',
+    'host'    =>  'localhost',
+    'driver'  => 'pdo_mysql'
 );
 
 // obtaining the entity manager
