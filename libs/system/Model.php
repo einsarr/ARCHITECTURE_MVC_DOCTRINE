@@ -5,7 +5,7 @@ class Model
     protected $entityManager;
     public function __construct()
     {
-        require_once "Bootstrap.php";
+        require_once "bootstrap.php";
         $this->entityManager = $entityManager;
     }
 }

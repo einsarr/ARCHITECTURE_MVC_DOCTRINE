@@ -1,9 +1,11 @@
 <?php
-class RolesDb
+namespace src\model;
+use libs\system\Model;
+class RolesDb extends Model
 {
-    public function add()
+    public function findAll()
     {
-        echo 22;
+        return array("ADMIN_COMPTA","ROLE_FINANCE");
     }
    
 }
