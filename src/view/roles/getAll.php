@@ -1,2 +1,5 @@
 <?php
-print_r($data);
+foreach($data as $key=>$value)
+{
+    echo "N° : ".$value->getId()." - role : ".$value->getNom()."</br>";
+}

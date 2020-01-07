@@ -5,7 +5,10 @@ class RolesDb extends Model
 {
     public function findAll()
     {
-        return array("ADMIN_COMPTA","ROLE_FINANCE");
+        return $this->entityManager
+                    ->createQuery("SELECT r FROM Roles r")
+                    ->getResult();
+        //array("ADMIN_COMPTA","ROLE_FINANCE");
     }
    
 }
