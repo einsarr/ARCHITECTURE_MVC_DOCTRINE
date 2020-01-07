@@ -10,3 +10,5 @@ $roles_dao->getAll();*/
 
 $mvc = new Bootstrap();
 
+echo "<h1><b><u>BIENVENUE DANS L'ARCHITECTURE MVC AVEC DOCTRINE</u></b></h1>";
+

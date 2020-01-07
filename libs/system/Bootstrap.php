@@ -39,7 +39,7 @@ class Bootstrap
                 die($controller_file." n'existe pas");
             }
         }else{
-            echo "MVC";
+            require_once "index.php";
         }
     }
 }
